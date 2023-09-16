@@ -3,7 +3,7 @@
 }
 
 :root {
-    --header-bg: #10375C;
+    --header-bg: #10375c;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Sora', sans-serif;
+    font-family: "Sora", sans-serif;
 }
 
 /* Common */
@@ -26,10 +26,31 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    color: #fff;
+    background: #2e80ce;
+    border-radius: 999px;
+    min-width: 205px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border: 1px solid #2e80ce;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 /* Header */
 .header {
     min-height: 100vh;
     background-color: var(--header-bg);
+    padding-top: 30px;
 }
 
 .logo {
@@ -48,7 +69,7 @@ a {
 .logo__circle::before {
     width: 3em;
     height: 3em;
-    background: #2E80CE;
+    background: #2e80ce;
 }
 
 .logo__circle::after {
@@ -77,3 +98,57 @@ a {
     font-size: 1.2em;
     font-weight: 300;
 }
+
+/* Header Top */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    color: #c9d2da;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+    padding: 4px 21px;
+}
+
+.navbar__link:hover,
+.navbar__link:active {
+    text-shadow: 1px 0 0 #fff;
+}
+
+.navbar__link--active {
+    text-shadow: 1px 0 0 #fff;
+}
+
+.navbar__link--active::before {
+    position: relative;
+    left: -8px;
+    top: -2px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.action__login {
+    color: #c9d2da;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-right: 28px;
+}
+
+.action__signup {
+    height: 44px;
+    line-height: 44px;
+    min-width: 104px;
+}
+
