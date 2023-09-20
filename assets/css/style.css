@@ -157,6 +157,13 @@ a {
 
 /* Header Top */
 .header-top {
+    padding: 8px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--header-bg);
     display: flex;
     justify-content: space-between;
     align-items: center;
